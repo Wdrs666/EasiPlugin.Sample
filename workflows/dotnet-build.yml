@@ -19,10 +19,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup .NET (pin to 6.0.426 via global.json fallback)
-        uses: actions/setup-dotnet@v3
+      - name: Setup .NET (pin to 6.0.426)
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '6.0.426'
+
+      - name: Ensure .NET 6 fallback (if not installed)
+        shell: powershell
+        run: |
+          try {
+            $v = dotnet --version
+            Write-Host "dotnet version: $v"
+          } catch {
+            Write-Host 'dotnet not found or incompatible; attempting install-dotnet'
+            Invoke-WebRequest -UseBasicParsing -Uri https://dot.net/v1/dotnet-install.ps1 -OutFile dotnet-install.ps1
+            pwsh -NoProfile -ExecutionPolicy Bypass -File .\dotnet-install.ps1 -Version 6.0.426 -InstallDir "$env:USERPROFILE\.dotnet6"
+            $env:PATH = "$env:USERPROFILE\.dotnet6;$env:PATH"
+            Write-Host 'Installed dotnet via install script into user profile'
+          }
 
       - name: Show dotnet info
         run: |
