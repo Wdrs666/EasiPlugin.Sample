@@ -1,33 +1,26 @@
-﻿2025-10-21T10:39:49.9615916Z ##[group]Run dotnet test
-2025-10-21T10:39:49.9616233Z [36;1mdotnet test[0m
-2025-10-21T10:39:49.9955458Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
-2025-10-21T10:39:49.9955779Z env:
-2025-10-21T10:39:49.9955942Z   Solution_Name: your-solution-name
-2025-10-21T10:39:49.9956206Z   Test_Project_Path: your-test-project-path
-2025-10-21T10:39:49.9956510Z   Wap_Project_Directory: your-wap-project-directory-name
-2025-10-21T10:39:49.9956804Z   Wap_Project_Path: your-wap-project-path
-2025-10-21T10:39:49.9957063Z   DOTNET_ROOT: C:\Program Files\dotnet
-2025-10-21T10:39:49.9957278Z ##[endgroup]
-2025-10-21T10:39:50.3331739Z The command could not be loaded, possibly because:
-2025-10-21T10:39:50.3332656Z   * You intended to execute a .NET application:
-2025-10-21T10:39:50.3333405Z       The application 'test' does not exist.
-2025-10-21T10:39:50.3334174Z   * You intended to execute a .NET SDK command:
-2025-10-21T10:39:50.3334809Z       A compatible .NET SDK was not found.
-2025-10-21T10:39:50.3335272Z 
-2025-10-21T10:39:50.3335549Z Requested SDK version: 6.0.426
-2025-10-21T10:39:50.3336186Z global.json file: D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json
-2025-10-21T10:39:50.3336632Z 
-2025-10-21T10:39:50.3336762Z Installed SDKs:
-2025-10-21T10:39:50.4313957Z 
-2025-10-21T10:39:50.4314916Z Install the [6.0.426] .NET SDK or update [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json] to match an installed SDK.
-2025-10-21T10:39:50.4315712Z 
-2025-10-21T10:39:50.4315876Z Learn about SDK resolution:
-2025-10-21T10:39:50.4316283Z https://aka.ms/dotnet/sdk-not-found
-2025-10-21T10:39:50.4316771Z 8.0.121 [C:\Program Files\dotnet\sdk]
-2025-10-21T10:39:50.4317502Z 8.0.206 [C:\Program Files\dotnet\sdk]
-2025-10-21T10:39:50.4317918Z 8.0.318 [C:\Program Files\dotnet\sdk]
-2025-10-21T10:39:50.4318627Z 8.0.415 [C:\Program Files\dotnet\sdk]
-2025-10-21T10:39:50.4319008Z 9.0.111 [C:\Program Files\dotnet\sdk]
-2025-10-21T10:39:50.4319386Z 9.0.205 [C:\Program Files\dotnet\sdk]
-2025-10-21T10:39:50.4319779Z 9.0.306 [C:\Program Files\dotnet\sdk]
-2025-10-21T10:39:50.5391943Z ##[error]Process completed with exit code 1.
+﻿2025-10-21T11:36:26.4595312Z ##[group]Run dotnet test
+2025-10-21T11:36:26.4595625Z [36;1mdotnet test[0m
+2025-10-21T11:36:26.4657849Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-10-21T11:36:26.4658185Z env:
+2025-10-21T11:36:26.4658355Z   Solution_Name: your-solution-name
+2025-10-21T11:36:26.4659019Z   Test_Project_Path: your-test-project-path
+2025-10-21T11:36:26.4659341Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T11:36:26.4659655Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T11:36:26.4659920Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T11:36:26.4660134Z ##[endgroup]
+2025-10-21T11:36:26.7737275Z A JSON parsing exception occurred in [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json], offset 0 (line 1, column 1): Invalid value.
+2025-10-21T11:36:32.2466376Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242: SDK Resolver Failure: "The SDK resolver "Microsoft.DotNet.MSBuildWorkloadSdkResolver" failed while attempting to resolve the SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator". Exception: "System.Text.Json.JsonReaderException: 'c' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0. [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2471769Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2473970Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2476380Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2478230Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.ReadSingleSegment() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2480276Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.Read() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2482479Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.WorkloadManifestReader.Utf8JsonStreamReader.Read() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2485251Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider.GlobalJsonReader.GetWorkloadVersionFromGlobalJson(String globalJsonPath) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2487857Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider.RefreshWorkloadManifests() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2495756Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider..ctor(String sdkRootPath, String sdkVersion, Func`2 getEnvironmentVariable, String userProfileDir, String globalJsonPath, String workloadSetVersion) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2498768Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider..ctor(String sdkRootPath, String sdkVersion, String userProfileDir, String globalJsonPath) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2503803Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.CachingWorkloadResolver.Resolve(String sdkReferenceName, String dotnetRootPath, String sdkVersion, String userProfileDir, String globalJsonPath) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2507938Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.WorkloadSdkResolver.Resolve(SdkReference sdkReference, SdkResolverContext resolverContext, SdkResultFactory factory) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.2514105Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.Build.BackEnd.SdkResolution.SdkResolverService.TryResolveSdkUsingSpecifiedResolvers(IReadOnlyList`1 resolvers, Int32 submissionId, SdkReference sdk, LoggingContext loggingContext, ElementLocation sdkReferenceLocation, String solutionPath, String projectPath, Boolean interactive, Boolean isRunningInVisualStudio, SdkResult& sdkResult, IEnumerable`1& errors, IEnumerable`1& warnings)"" [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T11:36:32.4201325Z ##[error]Process completed with exit code 1.

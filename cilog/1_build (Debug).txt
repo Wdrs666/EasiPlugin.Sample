@@ -1,136 +1,161 @@
-﻿2025-10-21T10:39:32.4590987Z Current runner version: '2.329.0'
-2025-10-21T10:39:32.4615044Z ##[group]Runner Image Provisioner
-2025-10-21T10:39:32.4615786Z Hosted Compute Agent
-2025-10-21T10:39:32.4616277Z Version: 20251013.424
-2025-10-21T10:39:32.4616848Z Commit: cfdd8bfed34d71a55b72df4d2e82343c3fc2bab3
-2025-10-21T10:39:32.4617460Z Build Date: 2025-10-13T20:22:23Z
-2025-10-21T10:39:32.4618077Z ##[endgroup]
-2025-10-21T10:39:32.4618580Z ##[group]Operating System
-2025-10-21T10:39:32.4619103Z Microsoft Windows Server 2025
-2025-10-21T10:39:32.4619635Z 10.0.26100
-2025-10-21T10:39:32.4620069Z Datacenter
-2025-10-21T10:39:32.4620511Z ##[endgroup]
-2025-10-21T10:39:32.4620911Z ##[group]Runner Image
-2025-10-21T10:39:32.4621417Z Image: windows-2025
-2025-10-21T10:39:32.4621856Z Version: 20251014.59.1
-2025-10-21T10:39:32.4622813Z Included Software: https://github.com/actions/runner-images/blob/win25/20251014.59/images/windows/Windows2025-Readme.md
-2025-10-21T10:39:32.4624498Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20251014.59
-2025-10-21T10:39:32.4625478Z ##[endgroup]
-2025-10-21T10:39:32.4628282Z ##[group]GITHUB_TOKEN Permissions
-2025-10-21T10:39:32.4630132Z Actions: write
-2025-10-21T10:39:32.4630650Z Attestations: write
-2025-10-21T10:39:32.4631152Z Checks: write
-2025-10-21T10:39:32.4631564Z Contents: write
-2025-10-21T10:39:32.4632047Z Deployments: write
-2025-10-21T10:39:32.4632545Z Discussions: write
-2025-10-21T10:39:32.4633033Z Issues: write
-2025-10-21T10:39:32.4633478Z Metadata: read
-2025-10-21T10:39:32.4633915Z Models: read
-2025-10-21T10:39:32.4634360Z Packages: write
-2025-10-21T10:39:32.4634779Z Pages: write
-2025-10-21T10:39:32.4635250Z PullRequests: write
-2025-10-21T10:39:32.4635716Z RepositoryProjects: write
-2025-10-21T10:39:32.4636235Z SecurityEvents: write
-2025-10-21T10:39:32.4636785Z Statuses: write
-2025-10-21T10:39:32.4637205Z ##[endgroup]
-2025-10-21T10:39:32.4639455Z Secret source: Actions
-2025-10-21T10:39:32.4640130Z Prepare workflow directory
-2025-10-21T10:39:32.5054074Z Prepare all required actions
-2025-10-21T10:39:32.5092335Z Getting action download info
-2025-10-21T10:39:32.9416109Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
-2025-10-21T10:39:33.0747710Z Download action repository 'actions/setup-dotnet@v4' (SHA:67a3573c9a986a3f9c594539f4ab511d57bb3ce9)
-2025-10-21T10:39:33.7244819Z Download action repository 'microsoft/setup-msbuild@v2' (SHA:6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce)
-2025-10-21T10:39:34.1564695Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
-2025-10-21T10:39:34.4997591Z Complete job name: build (Debug)
-2025-10-21T10:39:34.6831089Z ##[group]Run actions/checkout@v4
-2025-10-21T10:39:34.6832436Z with:
-2025-10-21T10:39:34.6833103Z   fetch-depth: 0
-2025-10-21T10:39:34.6833881Z   repository: Wdrs666/EasiPlugin.Sample
-2025-10-21T10:39:34.6835059Z   token: ***
-2025-10-21T10:39:34.6835743Z   ssh-strict: true
-2025-10-21T10:39:34.6836449Z   ssh-user: git
-2025-10-21T10:39:34.6837215Z   persist-credentials: true
-2025-10-21T10:39:34.6838011Z   clean: true
-2025-10-21T10:39:34.6838741Z   sparse-checkout-cone-mode: true
-2025-10-21T10:39:34.6839630Z   fetch-tags: false
-2025-10-21T10:39:34.6840355Z   show-progress: true
-2025-10-21T10:39:34.6841073Z   lfs: false
-2025-10-21T10:39:34.6841746Z   submodules: false
-2025-10-21T10:39:34.6842506Z   set-safe-directory: true
-2025-10-21T10:39:34.6843494Z env:
-2025-10-21T10:39:34.6844169Z   Solution_Name: your-solution-name
-2025-10-21T10:39:34.6845153Z   Test_Project_Path: your-test-project-path
-2025-10-21T10:39:34.6846346Z   Wap_Project_Directory: your-wap-project-directory-name
-2025-10-21T10:39:34.6847498Z   Wap_Project_Path: your-wap-project-path
-2025-10-21T10:39:34.6848836Z ##[endgroup]
-2025-10-21T10:39:34.8607458Z Syncing repository: Wdrs666/EasiPlugin.Sample
-2025-10-21T10:39:34.8610702Z ##[group]Getting Git version info
-2025-10-21T10:39:34.8612458Z Working directory is 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
-2025-10-21T10:39:34.9933862Z [command]"C:\Program Files\Git\bin\git.exe" version
-2025-10-21T10:39:35.5126784Z git version 2.51.0.windows.2
-2025-10-21T10:39:35.5190534Z ##[endgroup]
-2025-10-21T10:39:35.5217850Z Temporarily overriding HOME='D:\a\_temp\ae5fb71d-63ab-4e34-b6cb-b0555bace1ee' before making global git config changes
-2025-10-21T10:39:35.5221919Z Adding repository directory to the temporary git global config as a safe directory
-2025-10-21T10:39:35.5232918Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\EasiPlugin.Sample\EasiPlugin.Sample
-2025-10-21T10:39:35.5903643Z Deleting the contents of 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
-2025-10-21T10:39:35.5911058Z ##[group]Initializing the repository
-2025-10-21T10:39:35.5920706Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\EasiPlugin.Sample\EasiPlugin.Sample
-2025-10-21T10:39:35.7403086Z Initialized empty Git repository in D:/a/EasiPlugin.Sample/EasiPlugin.Sample/.git/
-2025-10-21T10:39:35.7460951Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Wdrs666/EasiPlugin.Sample
-2025-10-21T10:39:35.8183177Z ##[endgroup]
-2025-10-21T10:39:35.8184753Z ##[group]Disabling automatic garbage collection
-2025-10-21T10:39:35.8193526Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
-2025-10-21T10:39:35.8489730Z ##[endgroup]
-2025-10-21T10:39:35.8490958Z ##[group]Setting up auth
-2025-10-21T10:39:35.8509073Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
-2025-10-21T10:39:35.8802798Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
-2025-10-21T10:39:37.8098082Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2025-10-21T10:39:37.8421030Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
-2025-10-21T10:39:38.3558572Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
-2025-10-21T10:39:38.3861502Z ##[endgroup]
-2025-10-21T10:39:38.3862277Z ##[group]Fetching the repository
-2025-10-21T10:39:38.3879732Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
-2025-10-21T10:39:40.0432026Z From https://github.com/Wdrs666/EasiPlugin.Sample
-2025-10-21T10:39:40.0433570Z  * [new branch]      master     -> origin/master
-2025-10-21T10:39:40.0840270Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/master
-2025-10-21T10:39:40.1224524Z   origin/master
-2025-10-21T10:39:40.1268010Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/master
-2025-10-21T10:39:40.1616878Z 2d86a4bda4985b6ee0e725d751618c298191bdba
-2025-10-21T10:39:40.1664981Z ##[endgroup]
-2025-10-21T10:39:40.1665745Z ##[group]Determining the checkout info
-2025-10-21T10:39:40.1666805Z ##[endgroup]
-2025-10-21T10:39:40.1682526Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
-2025-10-21T10:39:40.2329828Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
-2025-10-21T10:39:40.2771598Z ##[group]Checking out the ref
-2025-10-21T10:39:40.2783508Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B master refs/remotes/origin/master
-2025-10-21T10:39:40.3927237Z branch 'master' set up to track 'origin/master'.
-2025-10-21T10:39:40.3935787Z Reset branch 'master'
-2025-10-21T10:39:40.3979414Z ##[endgroup]
-2025-10-21T10:39:40.4596812Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
-2025-10-21T10:39:40.4949962Z 2d86a4bda4985b6ee0e725d751618c298191bdba
-2025-10-21T10:39:40.5427982Z ##[group]Run actions/setup-dotnet@v4
-2025-10-21T10:39:40.5428349Z with:
-2025-10-21T10:39:40.5428544Z   dotnet-version: 8.0.x
-2025-10-21T10:39:40.5428775Z   cache: false
-2025-10-21T10:39:40.5428963Z env:
-2025-10-21T10:39:40.5429172Z   Solution_Name: your-solution-name
-2025-10-21T10:39:40.5429508Z   Test_Project_Path: your-test-project-path
-2025-10-21T10:39:40.5429892Z   Wap_Project_Directory: your-wap-project-directory-name
-2025-10-21T10:39:40.5430253Z   Wap_Project_Path: your-wap-project-path
-2025-10-21T10:39:40.5430536Z ##[endgroup]
-2025-10-21T10:39:41.0532550Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v4\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Runtime dotnet -Channel LTS
-2025-10-21T10:39:53.1600958Z dotnet-install: .NET Core Runtime with version '8.0.21' is already installed.
-2025-10-21T10:39:53.2036722Z ##[error]The operation was canceled.
-2025-10-21T10:39:56.2789507Z Post job cleanup.
-2025-10-21T10:39:57.0383878Z [command]"C:\Program Files\Git\bin\git.exe" version
-2025-10-21T10:39:57.0661136Z git version 2.51.0.windows.2
-2025-10-21T10:39:57.0740914Z Temporarily overriding HOME='D:\a\_temp\a1d4d8e2-ac50-4dcf-8b45-962a73edbc26' before making global git config changes
-2025-10-21T10:39:57.0741589Z Adding repository directory to the temporary git global config as a safe directory
-2025-10-21T10:39:57.0752100Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\EasiPlugin.Sample\EasiPlugin.Sample
-2025-10-21T10:39:57.1105861Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
-2025-10-21T10:39:57.1413358Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
-2025-10-21T10:39:57.6811401Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2025-10-21T10:39:57.7111472Z http.https://github.com/.extraheader
-2025-10-21T10:39:57.7163566Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
-2025-10-21T10:39:57.7468803Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
-2025-10-21T10:39:58.3093416Z Cleaning up orphan processes
+﻿2025-10-21T11:36:11.4127184Z Current runner version: '2.329.0'
+2025-10-21T11:36:11.4160923Z ##[group]Runner Image Provisioner
+2025-10-21T11:36:11.4162028Z Hosted Compute Agent
+2025-10-21T11:36:11.4162884Z Version: 20251013.424
+2025-10-21T11:36:11.4163837Z Commit: cfdd8bfed34d71a55b72df4d2e82343c3fc2bab3
+2025-10-21T11:36:11.4164890Z Build Date: 2025-10-13T20:22:23Z
+2025-10-21T11:36:11.4165790Z ##[endgroup]
+2025-10-21T11:36:11.4166489Z ##[group]Operating System
+2025-10-21T11:36:11.4167466Z Microsoft Windows Server 2025
+2025-10-21T11:36:11.4168359Z 10.0.26100
+2025-10-21T11:36:11.4169095Z Datacenter
+2025-10-21T11:36:11.4169839Z ##[endgroup]
+2025-10-21T11:36:11.4170631Z ##[group]Runner Image
+2025-10-21T11:36:11.4171617Z Image: windows-2025
+2025-10-21T11:36:11.4172450Z Version: 20251014.59.1
+2025-10-21T11:36:11.4174208Z Included Software: https://github.com/actions/runner-images/blob/win25/20251014.59/images/windows/Windows2025-Readme.md
+2025-10-21T11:36:11.4177191Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20251014.59
+2025-10-21T11:36:11.4179140Z ##[endgroup]
+2025-10-21T11:36:11.4183396Z ##[group]GITHUB_TOKEN Permissions
+2025-10-21T11:36:11.4185998Z Actions: write
+2025-10-21T11:36:11.4186856Z Attestations: write
+2025-10-21T11:36:11.4187731Z Checks: write
+2025-10-21T11:36:11.4188488Z Contents: write
+2025-10-21T11:36:11.4189242Z Deployments: write
+2025-10-21T11:36:11.4189985Z Discussions: write
+2025-10-21T11:36:11.4190762Z Issues: write
+2025-10-21T11:36:11.4191464Z Metadata: read
+2025-10-21T11:36:11.4192278Z Models: read
+2025-10-21T11:36:11.4193045Z Packages: write
+2025-10-21T11:36:11.4193868Z Pages: write
+2025-10-21T11:36:11.4194581Z PullRequests: write
+2025-10-21T11:36:11.4195481Z RepositoryProjects: write
+2025-10-21T11:36:11.4196343Z SecurityEvents: write
+2025-10-21T11:36:11.4197649Z Statuses: write
+2025-10-21T11:36:11.4198894Z ##[endgroup]
+2025-10-21T11:36:11.4201566Z Secret source: Actions
+2025-10-21T11:36:11.4202639Z Prepare workflow directory
+2025-10-21T11:36:11.4650581Z Prepare all required actions
+2025-10-21T11:36:11.4691462Z Getting action download info
+2025-10-21T11:36:11.7845126Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-10-21T11:36:11.9198108Z Download action repository 'actions/setup-dotnet@v4' (SHA:67a3573c9a986a3f9c594539f4ab511d57bb3ce9)
+2025-10-21T11:36:12.5022878Z Download action repository 'microsoft/setup-msbuild@v2' (SHA:6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce)
+2025-10-21T11:36:12.8823232Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-10-21T11:36:13.2154485Z Complete job name: build (Debug)
+2025-10-21T11:36:13.3772527Z ##[group]Run actions/checkout@v4
+2025-10-21T11:36:13.3773622Z with:
+2025-10-21T11:36:13.3774016Z   fetch-depth: 0
+2025-10-21T11:36:13.3774485Z   repository: Wdrs666/EasiPlugin.Sample
+2025-10-21T11:36:13.3775630Z   token: ***
+2025-10-21T11:36:13.3776022Z   ssh-strict: true
+2025-10-21T11:36:13.3776434Z   ssh-user: git
+2025-10-21T11:36:13.3776888Z   persist-credentials: true
+2025-10-21T11:36:13.3777395Z   clean: true
+2025-10-21T11:36:13.3777819Z   sparse-checkout-cone-mode: true
+2025-10-21T11:36:13.3778394Z   fetch-tags: false
+2025-10-21T11:36:13.3778818Z   show-progress: true
+2025-10-21T11:36:13.3779267Z   lfs: false
+2025-10-21T11:36:13.3779659Z   submodules: false
+2025-10-21T11:36:13.3780090Z   set-safe-directory: true
+2025-10-21T11:36:13.3780805Z env:
+2025-10-21T11:36:13.3781189Z   Solution_Name: your-solution-name
+2025-10-21T11:36:13.3781863Z   Test_Project_Path: your-test-project-path
+2025-10-21T11:36:13.3782727Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T11:36:13.3783550Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T11:36:13.3784178Z ##[endgroup]
+2025-10-21T11:36:13.5625794Z Syncing repository: Wdrs666/EasiPlugin.Sample
+2025-10-21T11:36:13.5628868Z ##[group]Getting Git version info
+2025-10-21T11:36:13.5630282Z Working directory is 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
+2025-10-21T11:36:13.6907666Z [command]"C:\Program Files\Git\bin\git.exe" version
+2025-10-21T11:36:14.1721500Z git version 2.51.0.windows.2
+2025-10-21T11:36:14.1773602Z ##[endgroup]
+2025-10-21T11:36:14.1795002Z Temporarily overriding HOME='D:\a\_temp\531c8397-073e-465d-a020-127f206742a6' before making global git config changes
+2025-10-21T11:36:14.1797048Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-21T11:36:14.1806915Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\EasiPlugin.Sample\EasiPlugin.Sample
+2025-10-21T11:36:14.2424576Z Deleting the contents of 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
+2025-10-21T11:36:14.2431202Z ##[group]Initializing the repository
+2025-10-21T11:36:14.2441938Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\EasiPlugin.Sample\EasiPlugin.Sample
+2025-10-21T11:36:14.3859798Z Initialized empty Git repository in D:/a/EasiPlugin.Sample/EasiPlugin.Sample/.git/
+2025-10-21T11:36:14.3923062Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Wdrs666/EasiPlugin.Sample
+2025-10-21T11:36:14.4769207Z ##[endgroup]
+2025-10-21T11:36:14.4770129Z ##[group]Disabling automatic garbage collection
+2025-10-21T11:36:14.4780261Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2025-10-21T11:36:14.5070049Z ##[endgroup]
+2025-10-21T11:36:14.5070891Z ##[group]Setting up auth
+2025-10-21T11:36:14.5089413Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-10-21T11:36:14.5380943Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-10-21T11:36:16.4051297Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-21T11:36:16.4371844Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2025-10-21T11:36:16.9421770Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2025-10-21T11:36:16.9733896Z ##[endgroup]
+2025-10-21T11:36:16.9734764Z ##[group]Fetching the repository
+2025-10-21T11:36:16.9752392Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-10-21T11:36:18.5543396Z From https://github.com/Wdrs666/EasiPlugin.Sample
+2025-10-21T11:36:18.5543859Z  * [new branch]      master     -> origin/master
+2025-10-21T11:36:18.5867946Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/master
+2025-10-21T11:36:18.6271029Z   origin/master
+2025-10-21T11:36:18.6320769Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/master
+2025-10-21T11:36:18.6641622Z 2c09ac1f2080ab208e7d1109a2862e20dfcc16a8
+2025-10-21T11:36:18.6673703Z ##[endgroup]
+2025-10-21T11:36:18.6674324Z ##[group]Determining the checkout info
+2025-10-21T11:36:18.6675945Z ##[endgroup]
+2025-10-21T11:36:18.6687666Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2025-10-21T11:36:18.7192777Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2025-10-21T11:36:18.7495433Z ##[group]Checking out the ref
+2025-10-21T11:36:18.7507865Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B master refs/remotes/origin/master
+2025-10-21T11:36:18.8607111Z branch 'master' set up to track 'origin/master'.
+2025-10-21T11:36:18.8614772Z Reset branch 'master'
+2025-10-21T11:36:18.9070665Z ##[endgroup]
+2025-10-21T11:36:18.9080967Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2025-10-21T11:36:18.9363250Z 2c09ac1f2080ab208e7d1109a2862e20dfcc16a8
+2025-10-21T11:36:18.9782175Z ##[group]Run actions/setup-dotnet@v4
+2025-10-21T11:36:18.9782570Z with:
+2025-10-21T11:36:18.9782785Z   dotnet-version: 8.0.x
+2025-10-21T11:36:18.9783022Z   cache: false
+2025-10-21T11:36:18.9783211Z env:
+2025-10-21T11:36:18.9783427Z   Solution_Name: your-solution-name
+2025-10-21T11:36:18.9783762Z   Test_Project_Path: your-test-project-path
+2025-10-21T11:36:18.9784141Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T11:36:18.9784495Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T11:36:18.9784771Z ##[endgroup]
+2025-10-21T11:36:19.3916317Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v4\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Runtime dotnet -Channel LTS
+2025-10-21T11:36:30.0134186Z dotnet-install: .NET Core Runtime with version '8.0.21' is already installed.
+2025-10-21T11:36:30.4750792Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v4\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Channel 8.0
+2025-10-21T11:36:31.5664583Z dotnet-install: .NET Core SDK with version '8.0.415' is already installed.
+2025-10-21T11:36:31.6700723Z ##[group]Run microsoft/setup-msbuild@v2
+2025-10-21T11:36:31.6701039Z with:
+2025-10-21T11:36:31.6701214Z   msbuild-architecture: x86
+2025-10-21T11:36:31.6701406Z env:
+2025-10-21T11:36:31.6701555Z   Solution_Name: your-solution-name
+2025-10-21T11:36:31.6701802Z   Test_Project_Path: your-test-project-path
+2025-10-21T11:36:31.6702100Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T11:36:31.6702386Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T11:36:31.6702635Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T11:36:31.6702837Z ##[endgroup]
+2025-10-21T11:36:31.8196889Z [command]C:\ProgramData\Chocolatey\bin\vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
+2025-10-21T11:36:32.5140315Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise
+2025-10-21T11:36:32.5430600Z ##[group]Run dotnet test
+2025-10-21T11:36:32.5430901Z [36;1mdotnet test[0m
+2025-10-21T11:36:32.5759346Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-10-21T11:36:32.5759650Z env:
+2025-10-21T11:36:32.5759817Z   Solution_Name: your-solution-name
+2025-10-21T11:36:32.5760053Z   Test_Project_Path: your-test-project-path
+2025-10-21T11:36:32.5760352Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T11:36:32.5760643Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T11:36:32.5760881Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T11:36:32.5761087Z ##[endgroup]
+2025-10-21T11:36:32.9040981Z A JSON parsing exception occurred in [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json], offset 0 (line 1, column 1): Invalid value.
+2025-10-21T11:36:35.7347812Z ##[error]The operation was canceled.
+2025-10-21T11:36:38.4491053Z Post job cleanup.
+2025-10-21T11:36:39.2316682Z [command]"C:\Program Files\Git\bin\git.exe" version
+2025-10-21T11:36:39.2625578Z git version 2.51.0.windows.2
+2025-10-21T11:36:39.2714897Z Temporarily overriding HOME='D:\a\_temp\97b12b61-09fa-4519-ac0d-75d3ccd169e1' before making global git config changes
+2025-10-21T11:36:39.2715580Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-21T11:36:39.2726670Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\EasiPlugin.Sample\EasiPlugin.Sample
+2025-10-21T11:36:39.3131366Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-10-21T11:36:39.3445534Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-10-21T11:36:39.9626930Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-21T11:36:39.9948139Z http.https://github.com/.extraheader
+2025-10-21T11:36:40.0010203Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2025-10-21T11:36:40.0436934Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2025-10-21T11:36:40.7969546Z Cleaning up orphan processes

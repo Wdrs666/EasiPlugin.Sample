@@ -1,0 +1,12 @@
+﻿2025-10-21T11:36:32.5430581Z ##[group]Run dotnet test
+2025-10-21T11:36:32.5430898Z [36;1mdotnet test[0m
+2025-10-21T11:36:32.5759328Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-10-21T11:36:32.5759647Z env:
+2025-10-21T11:36:32.5759815Z   Solution_Name: your-solution-name
+2025-10-21T11:36:32.5760051Z   Test_Project_Path: your-test-project-path
+2025-10-21T11:36:32.5760348Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T11:36:32.5760640Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T11:36:32.5760879Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T11:36:32.5761078Z ##[endgroup]
+2025-10-21T11:36:32.9040924Z A JSON parsing exception occurred in [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json], offset 0 (line 1, column 1): Invalid value.
+2025-10-21T11:36:35.7347794Z ##[error]The operation was canceled.

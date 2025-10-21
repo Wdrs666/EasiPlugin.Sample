@@ -1,44 +1,44 @@
-﻿2025-10-21T10:39:32.4533780Z Current runner version: '2.329.0'
-2025-10-21T10:39:32.4615018Z ##[group]Runner Image Provisioner
-2025-10-21T10:39:32.4615782Z Hosted Compute Agent
-2025-10-21T10:39:32.4616274Z Version: 20251013.424
-2025-10-21T10:39:32.4616845Z Commit: cfdd8bfed34d71a55b72df4d2e82343c3fc2bab3
-2025-10-21T10:39:32.4617457Z Build Date: 2025-10-13T20:22:23Z
-2025-10-21T10:39:32.4618074Z ##[endgroup]
-2025-10-21T10:39:32.4618549Z ##[group]Operating System
-2025-10-21T10:39:32.4619101Z Microsoft Windows Server 2025
-2025-10-21T10:39:32.4619632Z 10.0.26100
-2025-10-21T10:39:32.4620067Z Datacenter
-2025-10-21T10:39:32.4620508Z ##[endgroup]
-2025-10-21T10:39:32.4620909Z ##[group]Runner Image
-2025-10-21T10:39:32.4621414Z Image: windows-2025
-2025-10-21T10:39:32.4621853Z Version: 20251014.59.1
-2025-10-21T10:39:32.4622809Z Included Software: https://github.com/actions/runner-images/blob/win25/20251014.59/images/windows/Windows2025-Readme.md
-2025-10-21T10:39:32.4624158Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20251014.59
-2025-10-21T10:39:32.4625474Z ##[endgroup]
-2025-10-21T10:39:32.4628273Z ##[group]GITHUB_TOKEN Permissions
-2025-10-21T10:39:32.4630114Z Actions: write
-2025-10-21T10:39:32.4630647Z Attestations: write
-2025-10-21T10:39:32.4631149Z Checks: write
-2025-10-21T10:39:32.4631562Z Contents: write
-2025-10-21T10:39:32.4632044Z Deployments: write
-2025-10-21T10:39:32.4632542Z Discussions: write
-2025-10-21T10:39:32.4633029Z Issues: write
-2025-10-21T10:39:32.4633476Z Metadata: read
-2025-10-21T10:39:32.4633912Z Models: read
-2025-10-21T10:39:32.4634357Z Packages: write
-2025-10-21T10:39:32.4634777Z Pages: write
-2025-10-21T10:39:32.4635247Z PullRequests: write
-2025-10-21T10:39:32.4635713Z RepositoryProjects: write
-2025-10-21T10:39:32.4636232Z SecurityEvents: write
-2025-10-21T10:39:32.4636782Z Statuses: write
-2025-10-21T10:39:32.4637203Z ##[endgroup]
-2025-10-21T10:39:32.4639435Z Secret source: Actions
-2025-10-21T10:39:32.4640109Z Prepare workflow directory
-2025-10-21T10:39:32.5054036Z Prepare all required actions
-2025-10-21T10:39:32.5092305Z Getting action download info
-2025-10-21T10:39:32.9416065Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
-2025-10-21T10:39:33.0747664Z Download action repository 'actions/setup-dotnet@v4' (SHA:67a3573c9a986a3f9c594539f4ab511d57bb3ce9)
-2025-10-21T10:39:33.7244775Z Download action repository 'microsoft/setup-msbuild@v2' (SHA:6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce)
-2025-10-21T10:39:34.1564654Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
-2025-10-21T10:39:34.4997552Z Complete job name: build (Debug)
+﻿2025-10-21T11:36:11.4073653Z Current runner version: '2.329.0'
+2025-10-21T11:36:11.4160892Z ##[group]Runner Image Provisioner
+2025-10-21T11:36:11.4162014Z Hosted Compute Agent
+2025-10-21T11:36:11.4162873Z Version: 20251013.424
+2025-10-21T11:36:11.4163827Z Commit: cfdd8bfed34d71a55b72df4d2e82343c3fc2bab3
+2025-10-21T11:36:11.4164880Z Build Date: 2025-10-13T20:22:23Z
+2025-10-21T11:36:11.4165783Z ##[endgroup]
+2025-10-21T11:36:11.4166479Z ##[group]Operating System
+2025-10-21T11:36:11.4167453Z Microsoft Windows Server 2025
+2025-10-21T11:36:11.4168345Z 10.0.26100
+2025-10-21T11:36:11.4169082Z Datacenter
+2025-10-21T11:36:11.4169825Z ##[endgroup]
+2025-10-21T11:36:11.4170616Z ##[group]Runner Image
+2025-10-21T11:36:11.4171596Z Image: windows-2025
+2025-10-21T11:36:11.4172437Z Version: 20251014.59.1
+2025-10-21T11:36:11.4174186Z Included Software: https://github.com/actions/runner-images/blob/win25/20251014.59/images/windows/Windows2025-Readme.md
+2025-10-21T11:36:11.4176554Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20251014.59
+2025-10-21T11:36:11.4179126Z ##[endgroup]
+2025-10-21T11:36:11.4183370Z ##[group]GITHUB_TOKEN Permissions
+2025-10-21T11:36:11.4185973Z Actions: write
+2025-10-21T11:36:11.4186842Z Attestations: write
+2025-10-21T11:36:11.4187716Z Checks: write
+2025-10-21T11:36:11.4188480Z Contents: write
+2025-10-21T11:36:11.4189235Z Deployments: write
+2025-10-21T11:36:11.4189980Z Discussions: write
+2025-10-21T11:36:11.4190756Z Issues: write
+2025-10-21T11:36:11.4191453Z Metadata: read
+2025-10-21T11:36:11.4192261Z Models: read
+2025-10-21T11:36:11.4193033Z Packages: write
+2025-10-21T11:36:11.4193856Z Pages: write
+2025-10-21T11:36:11.4194571Z PullRequests: write
+2025-10-21T11:36:11.4195472Z RepositoryProjects: write
+2025-10-21T11:36:11.4196336Z SecurityEvents: write
+2025-10-21T11:36:11.4197631Z Statuses: write
+2025-10-21T11:36:11.4198875Z ##[endgroup]
+2025-10-21T11:36:11.4201539Z Secret source: Actions
+2025-10-21T11:36:11.4202605Z Prepare workflow directory
+2025-10-21T11:36:11.4650542Z Prepare all required actions
+2025-10-21T11:36:11.4691433Z Getting action download info
+2025-10-21T11:36:11.7845086Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-10-21T11:36:11.9198071Z Download action repository 'actions/setup-dotnet@v4' (SHA:67a3573c9a986a3f9c594539f4ab511d57bb3ce9)
+2025-10-21T11:36:12.5022836Z Download action repository 'microsoft/setup-msbuild@v2' (SHA:6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce)
+2025-10-21T11:36:12.8823194Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-10-21T11:36:13.2154453Z Complete job name: build (Debug)
