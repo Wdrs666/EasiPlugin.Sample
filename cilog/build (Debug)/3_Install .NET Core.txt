@@ -1,0 +1,13 @@
+﻿2025-10-21T10:39:40.5427960Z ##[group]Run actions/setup-dotnet@v4
+2025-10-21T10:39:40.5428346Z with:
+2025-10-21T10:39:40.5428541Z   dotnet-version: 8.0.x
+2025-10-21T10:39:40.5428773Z   cache: false
+2025-10-21T10:39:40.5428960Z env:
+2025-10-21T10:39:40.5429169Z   Solution_Name: your-solution-name
+2025-10-21T10:39:40.5429506Z   Test_Project_Path: your-test-project-path
+2025-10-21T10:39:40.5429889Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T10:39:40.5430251Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T10:39:40.5430534Z ##[endgroup]
+2025-10-21T10:39:41.0532512Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v4\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Runtime dotnet -Channel LTS
+2025-10-21T10:39:53.1600914Z dotnet-install: .NET Core Runtime with version '8.0.21' is already installed.
+2025-10-21T10:39:53.2036617Z ##[error]The operation was canceled.

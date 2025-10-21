@@ -1,0 +1,33 @@
+﻿2025-10-21T10:39:49.9615916Z ##[group]Run dotnet test
+2025-10-21T10:39:49.9616233Z [36;1mdotnet test[0m
+2025-10-21T10:39:49.9955458Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-10-21T10:39:49.9955779Z env:
+2025-10-21T10:39:49.9955942Z   Solution_Name: your-solution-name
+2025-10-21T10:39:49.9956206Z   Test_Project_Path: your-test-project-path
+2025-10-21T10:39:49.9956510Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T10:39:49.9956804Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T10:39:49.9957063Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T10:39:49.9957278Z ##[endgroup]
+2025-10-21T10:39:50.3331739Z The command could not be loaded, possibly because:
+2025-10-21T10:39:50.3332656Z   * You intended to execute a .NET application:
+2025-10-21T10:39:50.3333405Z       The application 'test' does not exist.
+2025-10-21T10:39:50.3334174Z   * You intended to execute a .NET SDK command:
+2025-10-21T10:39:50.3334809Z       A compatible .NET SDK was not found.
+2025-10-21T10:39:50.3335272Z 
+2025-10-21T10:39:50.3335549Z Requested SDK version: 6.0.426
+2025-10-21T10:39:50.3336186Z global.json file: D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json
+2025-10-21T10:39:50.3336632Z 
+2025-10-21T10:39:50.3336762Z Installed SDKs:
+2025-10-21T10:39:50.4313957Z 
+2025-10-21T10:39:50.4314916Z Install the [6.0.426] .NET SDK or update [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json] to match an installed SDK.
+2025-10-21T10:39:50.4315712Z 
+2025-10-21T10:39:50.4315876Z Learn about SDK resolution:
+2025-10-21T10:39:50.4316283Z https://aka.ms/dotnet/sdk-not-found
+2025-10-21T10:39:50.4316771Z 8.0.121 [C:\Program Files\dotnet\sdk]
+2025-10-21T10:39:50.4317502Z 8.0.206 [C:\Program Files\dotnet\sdk]
+2025-10-21T10:39:50.4317918Z 8.0.318 [C:\Program Files\dotnet\sdk]
+2025-10-21T10:39:50.4318627Z 8.0.415 [C:\Program Files\dotnet\sdk]
+2025-10-21T10:39:50.4319008Z 9.0.111 [C:\Program Files\dotnet\sdk]
+2025-10-21T10:39:50.4319386Z 9.0.205 [C:\Program Files\dotnet\sdk]
+2025-10-21T10:39:50.4319779Z 9.0.306 [C:\Program Files\dotnet\sdk]
+2025-10-21T10:39:50.5391943Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,14 @@
+﻿2025-10-21T10:39:37.6552812Z ##[group]Run actions/setup-dotnet@v4
+2025-10-21T10:39:37.6553150Z with:
+2025-10-21T10:39:37.6553323Z   dotnet-version: 8.0.x
+2025-10-21T10:39:37.6553511Z   cache: false
+2025-10-21T10:39:37.6553665Z env:
+2025-10-21T10:39:37.6553854Z   Solution_Name: your-solution-name
+2025-10-21T10:39:37.6554138Z   Test_Project_Path: your-test-project-path
+2025-10-21T10:39:37.6554440Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T10:39:37.6554727Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T10:39:37.6554957Z ##[endgroup]
+2025-10-21T10:39:38.0871725Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v4\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Runtime dotnet -Channel LTS
+2025-10-21T10:39:47.9441661Z dotnet-install: .NET Core Runtime with version '8.0.21' is already installed.
+2025-10-21T10:39:48.3222793Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v4\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Channel 8.0
+2025-10-21T10:39:49.0673077Z dotnet-install: .NET Core SDK with version '8.0.415' is already installed.

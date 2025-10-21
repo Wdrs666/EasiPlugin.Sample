@@ -1,0 +1,12 @@
+﻿2025-10-21T10:39:49.1707438Z ##[group]Run microsoft/setup-msbuild@v2
+2025-10-21T10:39:49.1707757Z with:
+2025-10-21T10:39:49.1707930Z   msbuild-architecture: x86
+2025-10-21T10:39:49.1708123Z env:
+2025-10-21T10:39:49.1708273Z   Solution_Name: your-solution-name
+2025-10-21T10:39:49.1708525Z   Test_Project_Path: your-test-project-path
+2025-10-21T10:39:49.1708826Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T10:39:49.1709116Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T10:39:49.1709353Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T10:39:49.1709560Z ##[endgroup]
+2025-10-21T10:39:49.3166981Z [command]C:\ProgramData\Chocolatey\bin\vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
+2025-10-21T10:39:49.9354265Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise
