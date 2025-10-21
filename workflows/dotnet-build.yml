@@ -12,14 +12,28 @@ jobs:
     runs-on: windows-latest
     env:
       DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+      # Provide defaults for scripts/actions that expect these environment variables
+      Solution_Name: 'EasiPluginSample.sln'
+      Configuration: 'Release'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup .NET
+      - name: Setup .NET (pin to 6.0.426 via global.json fallback)
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: '6.0.426'
+
+      - name: Show dotnet info
+        run: |
+          dotnet --info
+          dotnet --version
+          dotnet workload list || Write-Host 'dotnet workload list failed or no workloads'
+
+      - name: Show env vars (debug)
+        run: |
+          Write-Host "Solution_Name = $env:Solution_Name"
+          Write-Host "Configuration = $env:Configuration"
 
       - name: Ensure nuget.org source is available
         shell: powershell
