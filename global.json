@@ -1,4 +1,4 @@
-cilog{
+{
   "sdk": {
     "version": "6.0.426",
     "rollForward": "disable"
