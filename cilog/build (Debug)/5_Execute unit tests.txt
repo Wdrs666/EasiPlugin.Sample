@@ -1,12 +1,26 @@
-﻿2025-10-21T11:36:32.5430581Z ##[group]Run dotnet test
-2025-10-21T11:36:32.5430898Z [36;1mdotnet test[0m
-2025-10-21T11:36:32.5759328Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
-2025-10-21T11:36:32.5759647Z env:
-2025-10-21T11:36:32.5759815Z   Solution_Name: your-solution-name
-2025-10-21T11:36:32.5760051Z   Test_Project_Path: your-test-project-path
-2025-10-21T11:36:32.5760348Z   Wap_Project_Directory: your-wap-project-directory-name
-2025-10-21T11:36:32.5760640Z   Wap_Project_Path: your-wap-project-path
-2025-10-21T11:36:32.5760879Z   DOTNET_ROOT: C:\Program Files\dotnet
-2025-10-21T11:36:32.5761078Z ##[endgroup]
-2025-10-21T11:36:32.9040924Z A JSON parsing exception occurred in [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json], offset 0 (line 1, column 1): Invalid value.
-2025-10-21T11:36:35.7347794Z ##[error]The operation was canceled.
+﻿2025-10-21T12:26:16.0006205Z ##[group]Run dotnet test
+2025-10-21T12:26:16.0006913Z [36;1mdotnet test[0m
+2025-10-21T12:26:16.0070961Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-10-21T12:26:16.0071279Z env:
+2025-10-21T12:26:16.0071432Z   Solution_Name: your-solution-name
+2025-10-21T12:26:16.0071683Z   Test_Project_Path: your-test-project-path
+2025-10-21T12:26:16.0071976Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T12:26:16.0072268Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T12:26:16.0072503Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T12:26:16.0072709Z ##[endgroup]
+2025-10-21T12:26:16.3273314Z A JSON parsing exception occurred in [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\global.json], offset 0 (line 1, column 1): Invalid value.
+2025-10-21T12:26:20.5534722Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242: SDK Resolver Failure: "The SDK resolver "Microsoft.DotNet.MSBuildWorkloadSdkResolver" failed while attempting to resolve the SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator". Exception: "System.Text.Json.JsonReaderException: 'c' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0. [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5540354Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5544262Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5548036Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5551527Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.ReadSingleSegment() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5554869Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at System.Text.Json.Utf8JsonReader.Read() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5558916Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.WorkloadManifestReader.Utf8JsonStreamReader.Read() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5563840Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider.GlobalJsonReader.GetWorkloadVersionFromGlobalJson(String globalJsonPath) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5568816Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider.RefreshWorkloadManifests() [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5577386Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider..ctor(String sdkRootPath, String sdkVersion, Func`2 getEnvironmentVariable, String userProfileDir, String globalJsonPath, String workloadSetVersion) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5582939Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadManifestReader.SdkDirectoryWorkloadManifestProvider..ctor(String sdkRootPath, String sdkVersion, String userProfileDir, String globalJsonPath) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5588306Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.CachingWorkloadResolver.Resolve(String sdkReferenceName, String dotnetRootPath, String sdkVersion, String userProfileDir, String globalJsonPath) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5593534Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.WorkloadSdkResolver.Resolve(SdkReference sdkReference, SdkResolverContext resolverContext, SdkResultFactory factory) [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.5600680Z C:\Program Files\dotnet\sdk\9.0.306\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props(14,38): error MSB4242:    at Microsoft.Build.BackEnd.SdkResolution.SdkResolverService.TryResolveSdkUsingSpecifiedResolvers(IReadOnlyList`1 resolvers, Int32 submissionId, SdkReference sdk, LoggingContext loggingContext, ElementLocation sdkReferenceLocation, String solutionPath, String projectPath, Boolean interactive, Boolean isRunningInVisualStudio, SdkResult& sdkResult, IEnumerable`1& errors, IEnumerable`1& warnings)"" [D:\a\EasiPlugin.Sample\EasiPlugin.Sample\src\EasiPluginSample\EasiPluginSample.csproj]
+2025-10-21T12:26:20.7422497Z ##[error]Process completed with exit code 1.

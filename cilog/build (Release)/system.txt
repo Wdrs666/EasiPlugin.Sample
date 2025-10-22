@@ -1,5 +1,5 @@
-2025-10-21T11:36:08.2400000Z Job is waiting for a hosted runner to come online.
-2025-10-21T11:36:08.2260000Z Requested labels: windows-latest
-2025-10-21T11:36:08.2260000Z Job defined at: Wdrs666/EasiPlugin.Sample/.github/workflows/dotnet-desktop.yml@refs/heads/master
-2025-10-21T11:36:08.2260000Z Waiting for a runner to pick up this job...
-2025-10-21T11:36:08.2410000Z Job is about to start running on the hosted runner: GitHub Actions 1000000010
+2025-10-21T12:25:58.1190000Z Requested labels: windows-latest
+2025-10-21T12:25:58.1190000Z Job defined at: Wdrs666/EasiPlugin.Sample/.github/workflows/dotnet-desktop.yml@refs/heads/master
+2025-10-21T12:25:58.1190000Z Waiting for a runner to pick up this job...
+2025-10-21T12:25:58.6100000Z Job is waiting for a hosted runner to come online.
+2025-10-21T12:25:58.6110000Z Job is about to start running on the hosted runner: GitHub Actions 1000000013

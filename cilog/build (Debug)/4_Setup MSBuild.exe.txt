@@ -1,12 +1,12 @@
-﻿2025-10-21T11:36:31.6700705Z ##[group]Run microsoft/setup-msbuild@v2
-2025-10-21T11:36:31.6701036Z with:
-2025-10-21T11:36:31.6701212Z   msbuild-architecture: x86
-2025-10-21T11:36:31.6701404Z env:
-2025-10-21T11:36:31.6701553Z   Solution_Name: your-solution-name
-2025-10-21T11:36:31.6701800Z   Test_Project_Path: your-test-project-path
-2025-10-21T11:36:31.6702090Z   Wap_Project_Directory: your-wap-project-directory-name
-2025-10-21T11:36:31.6702384Z   Wap_Project_Path: your-wap-project-path
-2025-10-21T11:36:31.6702633Z   DOTNET_ROOT: C:\Program Files\dotnet
-2025-10-21T11:36:31.6702835Z ##[endgroup]
-2025-10-21T11:36:31.8196850Z [command]C:\ProgramData\Chocolatey\bin\vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
-2025-10-21T11:36:32.5140275Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise
+﻿2025-10-21T12:26:15.3037630Z ##[group]Run microsoft/setup-msbuild@v2
+2025-10-21T12:26:15.3037990Z with:
+2025-10-21T12:26:15.3038171Z   msbuild-architecture: x86
+2025-10-21T12:26:15.3038361Z env:
+2025-10-21T12:26:15.3038516Z   Solution_Name: your-solution-name
+2025-10-21T12:26:15.3038772Z   Test_Project_Path: your-test-project-path
+2025-10-21T12:26:15.3039069Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T12:26:15.3039361Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T12:26:15.3039594Z   DOTNET_ROOT: C:\Program Files\dotnet
+2025-10-21T12:26:15.3039798Z ##[endgroup]
+2025-10-21T12:26:15.4858715Z [command]C:\ProgramData\Chocolatey\bin\vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
+2025-10-21T12:26:15.9489417Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise

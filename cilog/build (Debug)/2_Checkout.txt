@@ -1,66 +1,66 @@
-﻿2025-10-21T11:36:13.3772481Z ##[group]Run actions/checkout@v4
-2025-10-21T11:36:13.3773615Z with:
-2025-10-21T11:36:13.3774013Z   fetch-depth: 0
-2025-10-21T11:36:13.3774482Z   repository: Wdrs666/EasiPlugin.Sample
-2025-10-21T11:36:13.3775624Z   token: ***
-2025-10-21T11:36:13.3776018Z   ssh-strict: true
-2025-10-21T11:36:13.3776431Z   ssh-user: git
-2025-10-21T11:36:13.3776885Z   persist-credentials: true
-2025-10-21T11:36:13.3777392Z   clean: true
-2025-10-21T11:36:13.3777816Z   sparse-checkout-cone-mode: true
-2025-10-21T11:36:13.3778391Z   fetch-tags: false
-2025-10-21T11:36:13.3778815Z   show-progress: true
-2025-10-21T11:36:13.3779257Z   lfs: false
-2025-10-21T11:36:13.3779656Z   submodules: false
-2025-10-21T11:36:13.3780087Z   set-safe-directory: true
-2025-10-21T11:36:13.3780798Z env:
-2025-10-21T11:36:13.3781186Z   Solution_Name: your-solution-name
-2025-10-21T11:36:13.3781860Z   Test_Project_Path: your-test-project-path
-2025-10-21T11:36:13.3782688Z   Wap_Project_Directory: your-wap-project-directory-name
-2025-10-21T11:36:13.3783547Z   Wap_Project_Path: your-wap-project-path
-2025-10-21T11:36:13.3784175Z ##[endgroup]
-2025-10-21T11:36:13.5625721Z Syncing repository: Wdrs666/EasiPlugin.Sample
-2025-10-21T11:36:13.5628830Z ##[group]Getting Git version info
-2025-10-21T11:36:13.5630271Z Working directory is 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
-2025-10-21T11:36:13.6907614Z [command]"C:\Program Files\Git\bin\git.exe" version
-2025-10-21T11:36:14.1721420Z git version 2.51.0.windows.2
-2025-10-21T11:36:14.1773562Z ##[endgroup]
-2025-10-21T11:36:14.1794968Z Temporarily overriding HOME='D:\a\_temp\531c8397-073e-465d-a020-127f206742a6' before making global git config changes
-2025-10-21T11:36:14.1797042Z Adding repository directory to the temporary git global config as a safe directory
-2025-10-21T11:36:14.1806888Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\EasiPlugin.Sample\EasiPlugin.Sample
-2025-10-21T11:36:14.2424434Z Deleting the contents of 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
-2025-10-21T11:36:14.2431179Z ##[group]Initializing the repository
-2025-10-21T11:36:14.2441906Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\EasiPlugin.Sample\EasiPlugin.Sample
-2025-10-21T11:36:14.3859714Z Initialized empty Git repository in D:/a/EasiPlugin.Sample/EasiPlugin.Sample/.git/
-2025-10-21T11:36:14.3923014Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Wdrs666/EasiPlugin.Sample
-2025-10-21T11:36:14.4769109Z ##[endgroup]
-2025-10-21T11:36:14.4770124Z ##[group]Disabling automatic garbage collection
-2025-10-21T11:36:14.4780232Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
-2025-10-21T11:36:14.5069979Z ##[endgroup]
-2025-10-21T11:36:14.5070887Z ##[group]Setting up auth
-2025-10-21T11:36:14.5089376Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
-2025-10-21T11:36:14.5380805Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
-2025-10-21T11:36:16.4051239Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2025-10-21T11:36:16.4371780Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
-2025-10-21T11:36:16.9421718Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
-2025-10-21T11:36:16.9733823Z ##[endgroup]
-2025-10-21T11:36:16.9734751Z ##[group]Fetching the repository
-2025-10-21T11:36:16.9749557Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
-2025-10-21T11:36:18.5543338Z From https://github.com/Wdrs666/EasiPlugin.Sample
-2025-10-21T11:36:18.5543854Z  * [new branch]      master     -> origin/master
-2025-10-21T11:36:18.5867898Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/master
-2025-10-21T11:36:18.6270973Z   origin/master
-2025-10-21T11:36:18.6320737Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/master
-2025-10-21T11:36:18.6641573Z 2c09ac1f2080ab208e7d1109a2862e20dfcc16a8
-2025-10-21T11:36:18.6673662Z ##[endgroup]
-2025-10-21T11:36:18.6674315Z ##[group]Determining the checkout info
-2025-10-21T11:36:18.6675919Z ##[endgroup]
-2025-10-21T11:36:18.6687643Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
-2025-10-21T11:36:18.7192744Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
-2025-10-21T11:36:18.7495396Z ##[group]Checking out the ref
-2025-10-21T11:36:18.7507679Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B master refs/remotes/origin/master
-2025-10-21T11:36:18.8607053Z branch 'master' set up to track 'origin/master'.
-2025-10-21T11:36:18.8614758Z Reset branch 'master'
-2025-10-21T11:36:18.9070632Z ##[endgroup]
-2025-10-21T11:36:18.9080929Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
-2025-10-21T11:36:18.9363212Z 2c09ac1f2080ab208e7d1109a2862e20dfcc16a8
+﻿2025-10-21T12:26:02.4499304Z ##[group]Run actions/checkout@v4
+2025-10-21T12:26:02.4500622Z with:
+2025-10-21T12:26:02.4501236Z   fetch-depth: 0
+2025-10-21T12:26:02.4501962Z   repository: Wdrs666/EasiPlugin.Sample
+2025-10-21T12:26:02.4503085Z   token: ***
+2025-10-21T12:26:02.4503713Z   ssh-strict: true
+2025-10-21T12:26:02.4504362Z   ssh-user: git
+2025-10-21T12:26:02.4505054Z   persist-credentials: true
+2025-10-21T12:26:02.4505808Z   clean: true
+2025-10-21T12:26:02.4506470Z   sparse-checkout-cone-mode: true
+2025-10-21T12:26:02.4507300Z   fetch-tags: false
+2025-10-21T12:26:02.4507965Z   show-progress: true
+2025-10-21T12:26:02.4508655Z   lfs: false
+2025-10-21T12:26:02.4509269Z   submodules: false
+2025-10-21T12:26:02.4510382Z   set-safe-directory: true
+2025-10-21T12:26:02.4511392Z env:
+2025-10-21T12:26:02.4512040Z   Solution_Name: your-solution-name
+2025-10-21T12:26:02.4512967Z   Test_Project_Path: your-test-project-path
+2025-10-21T12:26:02.4514068Z   Wap_Project_Directory: your-wap-project-directory-name
+2025-10-21T12:26:02.4515211Z   Wap_Project_Path: your-wap-project-path
+2025-10-21T12:26:02.4516079Z ##[endgroup]
+2025-10-21T12:26:02.6158490Z Syncing repository: Wdrs666/EasiPlugin.Sample
+2025-10-21T12:26:02.6160855Z ##[group]Getting Git version info
+2025-10-21T12:26:02.6162049Z Working directory is 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
+2025-10-21T12:26:02.6994441Z [command]"C:\Program Files\Git\bin\git.exe" version
+2025-10-21T12:26:02.8432797Z git version 2.51.0.windows.2
+2025-10-21T12:26:02.8483772Z ##[endgroup]
+2025-10-21T12:26:02.8504339Z Temporarily overriding HOME='D:\a\_temp\1eced28e-6864-439d-849e-2a832e9f11b8' before making global git config changes
+2025-10-21T12:26:02.8506606Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-21T12:26:02.8516348Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\EasiPlugin.Sample\EasiPlugin.Sample
+2025-10-21T12:26:02.8799156Z Deleting the contents of 'D:\a\EasiPlugin.Sample\EasiPlugin.Sample'
+2025-10-21T12:26:02.8805470Z ##[group]Initializing the repository
+2025-10-21T12:26:02.8814500Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\EasiPlugin.Sample\EasiPlugin.Sample
+2025-10-21T12:26:02.9618902Z Initialized empty Git repository in D:/a/EasiPlugin.Sample/EasiPlugin.Sample/.git/
+2025-10-21T12:26:02.9667262Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Wdrs666/EasiPlugin.Sample
+2025-10-21T12:26:03.0011709Z ##[endgroup]
+2025-10-21T12:26:03.0014275Z ##[group]Disabling automatic garbage collection
+2025-10-21T12:26:03.0022774Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2025-10-21T12:26:03.0323386Z ##[endgroup]
+2025-10-21T12:26:03.0324556Z ##[group]Setting up auth
+2025-10-21T12:26:03.0337002Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-10-21T12:26:03.0621555Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-10-21T12:26:03.9848087Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-21T12:26:04.0147625Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2025-10-21T12:26:04.5454463Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2025-10-21T12:26:04.5746462Z ##[endgroup]
+2025-10-21T12:26:04.5747258Z ##[group]Fetching the repository
+2025-10-21T12:26:04.5761725Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-10-21T12:26:05.4070725Z From https://github.com/Wdrs666/EasiPlugin.Sample
+2025-10-21T12:26:05.4071534Z  * [new branch]      master     -> origin/master
+2025-10-21T12:26:05.4259185Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/master
+2025-10-21T12:26:05.4512845Z   origin/master
+2025-10-21T12:26:05.4557648Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/master
+2025-10-21T12:26:05.4797118Z 40b8aaf794d586dcb54060de4f22a8d591173159
+2025-10-21T12:26:05.4826914Z ##[endgroup]
+2025-10-21T12:26:05.4827491Z ##[group]Determining the checkout info
+2025-10-21T12:26:05.4828296Z ##[endgroup]
+2025-10-21T12:26:05.4838570Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2025-10-21T12:26:05.5148782Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2025-10-21T12:26:05.5419425Z ##[group]Checking out the ref
+2025-10-21T12:26:05.5429701Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B master refs/remotes/origin/master
+2025-10-21T12:26:05.5982971Z branch 'master' set up to track 'origin/master'.
+2025-10-21T12:26:05.5990775Z Reset branch 'master'
+2025-10-21T12:26:05.6024857Z ##[endgroup]
+2025-10-21T12:26:05.6325361Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2025-10-21T12:26:05.6594159Z 40b8aaf794d586dcb54060de4f22a8d591173159
